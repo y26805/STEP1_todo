@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>ToDoList</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="todo.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<h2>進捗どうですか？</h2>
+<h3 class="answer yes">▶︎YES</h3>
+<h3 class="answer no">▶︎NO</h3>
+
+<div class="prompt yes">
+	<p>おめでとうございます！
+	引き続きこのToDoリストを使って作業効率をもっと向上させてください！</p>
+</div>
+
+<div class="prompt no">
+	<p>ご愁傷さまです！
+	ぜひこのToDoリストをタスク管理にお使いください！</p>
+</div>
+
+<div class="prompt" id="todo">
+<div id="input">
+<form>
+  <div id="form" class="form-group">
+  	<label for="text">タスク名</label>
+	<input type="text" id="formText" class="form-control">
+  	<label for="date">締め切り日</label>
+  	<input type="date" id="date" name="date" class="form-control">
+<!--     <input type="time" class="form-control"> -->
+</div>
+  	  <button id="formButton" type="button" class="btn btn-info">追加</button>
+</form>
+ </div>
+
+<hr>
+
+<h3>ToDo</h3>
+  <table id="results" class="table table-hover">
+  <tbody>
+  	</tbody>
+  </table>
+
+<button id="done" class="btn btn-success">だん！</button>
+<button id="clear" class="btn btn-danger">もう嫌だぁぁ！</button>
+ </div>
+</body>
+</html>

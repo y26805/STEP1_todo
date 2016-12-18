@@ -1,0 +1,47 @@
+body {
+	padding: 10px;
+}
+
+.answer {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.prompt {
+	display: none;
+}
+
+#input {
+	padding-bottom: 10px;
+	width: 500px;
+	display: block;
+}
+
+.btn {
+	margin-top: 10px;
+	display: block;
+}
+
+table {
+	text-align: left;
+}
+
+th {
+	width: 20%;
+	max-width: 150px;
+	padding: 10px;
+	height: 30px;
+}
+
+tr {
+	padding-bottom: 5px;
+}
+
+.answer:hover {
+	color: blue;
+}
+
+.time-warning {
+	color: red;
+	font-weight: bold;
+}
